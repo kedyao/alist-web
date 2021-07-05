@@ -22,10 +22,6 @@
           <component :is="record.icon" class="file-icon"/>
           {{ text }}
           <span v-if="record.type==='file'" class="action">
-            <copy id="action-1" @click="copyFileLink(record)" />
-            <a target="_blank" :href="getFileDownLink(record)">
-              <download class="action" id="action-2"></download>
-            </a>
           </span>
         </template>
       </a-table>
